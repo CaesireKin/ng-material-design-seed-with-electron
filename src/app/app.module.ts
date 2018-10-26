@@ -1,5 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import {MaterialDesignModule} from './material-design.module';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +11,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,  // Material Design Require Browser Animation
+    MaterialDesignModule
   ],
   providers: [],
   bootstrap: [AppComponent]
