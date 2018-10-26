@@ -2,6 +2,8 @@
 
 + Since angular `ng build` command will create a directory named same as project in dist, consider write a script or a command to move the build result to the dist dictory
 
++ If you change the name property in package.json.  please change the releated property in angular.json either. otherwise, you may failed to install dependencies and more other operation.(it can be easy if you are using vscode, CTRL + D to find all the old name you have changed at package.json in angular.json, at last, change to the new name)
+
 + For a quick look, just run `npm run electron`, this will start the application immediately and link the homepage as dist/index.html
 
 # Package the application
